@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="cross browser" parallel="classes">
+<test name="different browser1">
+<parameter name="browserName" value="chrome"/>
+<classes>
+<class name="selprog.parallelexecutiontestng1"/>
+</classes>
+</test>
+<test name="different browser2">
+<parameter name="browserName" value="Firefox"/>
+<classes>
+<class name="selprog.parallelexecutiontestng1"/>
+</classes>
+</test>
+<test name="different browser3">
+<parameter name="browserName" value="ie"/>
+<classes>
+<class name="selprog.parallelexecutiontestng1"/>
+</classes>
+</test>
+</suite>
